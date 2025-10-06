@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f6fb;
+  color: #222;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: linear-gradient(135deg, #5c6bc0, #3949ab);
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px 80px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.8em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #e0e0e0;
+}
+
+nav {
+  margin-top: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  font-size: 0.95em;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+section {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  border-left: 5px solid #5c6bc0;
+  padding-left: 12px;
+  color: #333;
+}
+
+.about p {
+  color: #444;
+  font-size: 1.05em;
+  margin-top: 10px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills li {
+  background: #5c6bc0;
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 0.9em;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.skills li:hover {
+  transform: scale(1.05);
+  background: #3949ab;
+}
+
+.projects .project {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.projects .project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.projects h3 {
+  color: #3949ab;
+  margin-bottom: 10px;
+}
+
+.projects p {
+  color: #444;
+}
+
+.contact {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.contact a {
+  color: #3949ab;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: #1e88e5;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 0;
+  background: #3949ab;
+  color: #fff;
+  font-size: 0.9em;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
